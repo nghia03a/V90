@@ -9,4 +9,87 @@ html {
 /* khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* CM */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  color: #fff;
+  min-width: 11.8rem;
+  display: inline-block;
+  padding: 0rem 1.6rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 2.45rem;
+  background: #171100;
+  line-height: 5rem;
+}
+
+/* HEADER */
+
+.header {
+  background: #ffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -2.8rem;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  padding: 3.6rem 0 0.8rem;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 0.8rem 2.1rem;
+  position: relative;
+}
+
+.nav li.active a::after,
+.nav a:hover {
+  color: #171100;
+  text-shadow: 0.1rem 0 0 currentColor;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  display: block;
+  left: 2.1rem;
+  content: "";
+  width: 1.2rem;
+  height: 0.2rem;
+  border-radius: 0.01rem;
+  background: #171100;
+}
+
+.header .btn-sig-up {
+  min-width: 14.4rem;
+}
+
+.header .action {
+  margin-left: 4.9rem;
 }
