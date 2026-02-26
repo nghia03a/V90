@@ -22,6 +22,15 @@ a {
   text-decoration: none;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.076rem;
+}
+
 .main-content {
   width: 1170px;
   max-width: calc(100% - 48px);
@@ -262,4 +271,48 @@ a {
 
 .hero .stats strong:nth-child(2) {
   margin-left: 2.8rem;
+}
+
+/* POPULAR */
+.popular {
+  padding: 6.5rem 0;
+  margin-top: 13.5rem;
+}
+
+.popular-top .desc {
+  margin-top: 1.6rem;
+  width: 45.8rem;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular-top .controls {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.popular-top .control-btn:hover {
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
